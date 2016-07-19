@@ -7,8 +7,26 @@
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
     <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+    <span>
+      Written: {{chat.time}}    </span>
+    <span>
+      {{chat.date}}
+    </span>
     <p>
-      {{chat.comments}}
+      Course Code : {{chat.coursecode}}
     </p>
+    <p>
+      Course Name: {{chat.courseName}}
+    </p>
+    <p>
+      Rating: {{chat.rating}}
+    </p>
+    <p>
+      Comments: {{chat.comments}}
+    </p>
+    <p>
+    Author: {{chat.author}}
+    </p>
+
   </ion-content>
 </ion-view>
