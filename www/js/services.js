@@ -12,7 +12,7 @@ angular.module('starter.services', [])
     comments: 'it was ok like?',
     rating: '3',
     time: '12:00',
-    date: '12/9/2016',
+    date: '12/7/2016',
     face:'img/ben.png'
 
   }, {
@@ -23,7 +23,7 @@ angular.module('starter.services', [])
     comments: 'You on your way?',
     rating: '4',
     time: '12:00',
-    date: '2/9/2016',
+    date: '2/7/2016',
     face: 'img/max.png'
   }, {
     id: 2,
@@ -33,7 +33,7 @@ angular.module('starter.services', [])
     comments: 'teacher was hilr ',
     rating: '2',
     time: '12:00',
-    date: '12/9/2016',
+    date: '12/7/2016',
     face: 'img/adam.jpg'
   }, {
     id: 3,
@@ -43,7 +43,7 @@ angular.module('starter.services', [])
     comments: 'it was aight ?',
     rating: '2',
     time: '12:00',
-    date: '14/9/2016',
+    date: '14/7/2016',
     face: 'img/perry.png'
   }, {
     id: 4,
@@ -53,7 +53,7 @@ angular.module('starter.services', [])
     comments: 'the course was ok , could have been beter doe',
     rating: '5',
     time: '12:00',
-    date: '12/9/2016',
+    date: '12/7/2016',
     face: 'img/mike.png'
   }];
 
@@ -75,3 +75,49 @@ angular.module('starter.services', [])
     }
   };
 });
+
+
+// .factory('Users', function() {
+//   // Might use a resource here that returns a JSON array
+//
+//   // Some fake testing data
+//   var users = [{
+//     id: 0,
+//     userName:'spag22' ,
+//     name: 'Jane Does',
+//     uniName: 'Solent',
+//     reviewsByMe: [],
+//     bookmarks: [],
+//     password: 'spago',
+//     email: 'ja@hotmail.com'
+//
+//   }, {
+//     id: 1,
+//     userName:'eggs11' ,
+//     name: 'Dan bowe',
+//     uniName: 'Reading',
+//     reviewsByMe: [],
+//     bookmarks: [],
+//     password: 'eggsbacon',
+//     email: 'dan@hotmail.com'
+//   }
+//   }];
+//
+//
+//   return {
+//     all: function() {
+//       return users;
+//     },
+//     remove: function(user) {
+//       users.splice(chats.indexOf(chat), 1);
+//     },
+//     get: function(userId) {
+//       for (var i = 0; i < users.length; i++) {
+//         if (users[i].id === parseInt(userId)) {
+//           return users[i];
+//         }
+//       }
+//       return null;
+//     }
+//   };
+// });

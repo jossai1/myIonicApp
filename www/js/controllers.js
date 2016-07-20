@@ -8,26 +8,57 @@ angular.module('starter.controllers', [])
 
 $scope.todoAdd = function()
 {
-
+    var date  = new Date();
+    var currentTime = date.getHours() + '.' + date.getMinutes();
+    var currentDate = date.getDate() +'/'+ (date.getMonth()+1) + '/' + date.getFullYear();
     $scope.chats = Chats.all();
 
     console.log(($scope.chats.length));
     console.log($scope.ds.courseName);
 
+
     $scope.chats.push({id: (Chats.all().length),
     coursecode:$scope.ds.courseCode ,
     courseName: $scope.ds.courseName,
-    author: 'Bsed',
+    author: 'Jane Ossai',
     comments: $scope.ds.comments,
     rating: '3',
-    time: '12:00',
-    date: '12/9/2016',
+    time: currentTime,
+    date: currentDate,
     face:'img/identicon.png'});
 
     // $scope.de.courseCode = "";
     // $scope.ds.comments = "";
     // $scope.ds.courseName= "";
   };
+
+
+})
+.controller('LoginCtrl', function($scope/*,Users*/) {
+
+  // $scope.doLogin() = function()
+  // {
+  //
+  //     $scope.users = Users.all();
+  //
+  //     console.log(($scope.chats.length));
+  //     console.log($scope.ds.courseName);
+  //
+  //
+  //     $scope.chats.push({id: (Chats.all().length),
+  //     coursecode:$scope.ds.courseCode ,
+  //     courseName: $scope.ds.courseName,
+  //     author: 'Jane Ossai',
+  //     comments: $scope.ds.comments,
+  //     rating: '3',
+  //     time: currentTime,
+  //     date: currentDate,
+  //     face:'img/identicon.png'});
+  //
+  //     // $scope.de.courseCode = "";
+  //     // $scope.ds.comments = "";
+  //     // $scope.ds.courseName= "";
+  //   };
 
 
 })

@@ -68,6 +68,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    //working on this
+    .state('tab.login', {
+      url: '/login',
+      views: {
+        'tab-login': {
+          templateUrl: 'templates/login.html',
+          controller: 'LoginCtrl as loginctrl'
+        }
+      }
+    })
 
   .state('tab.account', {
     url: '/account',
