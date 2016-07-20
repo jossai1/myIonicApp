@@ -74,50 +74,52 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+
+
+
+.factory('Users', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var users = [{
+    id: 0,
+    userName:'spag22' ,
+    name: 'Jane Does',
+    uniName: 'Solent',
+    reviewsByMe: [],
+    bookmarks: [],
+    password: 'spago',
+    email: 'ja@hotmail.com'
+
+  }, {
+    id: 1,
+    userName:'eggs11' ,
+    name: 'Dan bowe',
+    uniName: 'Reading',
+    reviewsByMe: [],
+    bookmarks: [],
+    password: 'eggsbacon',
+    email: 'dan@hotmail.com'
+  }
+];
+
+
+  return {
+    all: function() {
+      return users;
+    },
+    remove: function(user) {
+      users.splice(users.indexOf(user), 1);
+    },
+    get: function(userId) {
+      for (var i = 0; i < users.length; i++) {
+        if (users[i].id === parseInt(userId)) {
+          return users[i];
+        }
+      }
+      return null;
+    }
+  };
 });
-
-
-// .factory('Users', function() {
-//   // Might use a resource here that returns a JSON array
-//
-//   // Some fake testing data
-//   var users = [{
-//     id: 0,
-//     userName:'spag22' ,
-//     name: 'Jane Does',
-//     uniName: 'Solent',
-//     reviewsByMe: [],
-//     bookmarks: [],
-//     password: 'spago',
-//     email: 'ja@hotmail.com'
-//
-//   }, {
-//     id: 1,
-//     userName:'eggs11' ,
-//     name: 'Dan bowe',
-//     uniName: 'Reading',
-//     reviewsByMe: [],
-//     bookmarks: [],
-//     password: 'eggsbacon',
-//     email: 'dan@hotmail.com'
-//   }
-//   }];
-//
-//
-//   return {
-//     all: function() {
-//       return users;
-//     },
-//     remove: function(user) {
-//       users.splice(chats.indexOf(chat), 1);
-//     },
-//     get: function(userId) {
-//       for (var i = 0; i < users.length; i++) {
-//         if (users[i].id === parseInt(userId)) {
-//           return users[i];
-//         }
-//       }
-//       return null;
-//     }
-//   };
-// });
