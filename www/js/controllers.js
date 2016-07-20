@@ -5,6 +5,31 @@ angular.module('starter.controllers', [])
 // $scope.courseCode = "jane hi ";
 // $scope.comments = "jsne";
 // console.log($scope.courseCode);
+<<<<<<< HEAD
+
+$scope.todoAdd = function()
+{
+
+    $scope.chats = Chats.all();
+
+    console.log(($scope.chats.length));
+    console.log($scope.ds.courseName);
+
+    $scope.chats.push({id: (Chats.all().length),
+    coursecode:$scope.ds.courseCode ,
+    courseName: $scope.ds.courseName,
+    author: 'Bsed',
+    comments: $scope.ds.comments,
+    rating: '3',
+    time: '12:00',
+    date: '12/9/2016',
+    face:'img/identicon.png'});
+
+    // $scope.de.courseCode = "";
+    // $scope.ds.comments = "";
+    // $scope.ds.courseName= "";
+  };
+
 
 $scope.todoAdd = function()
 {
